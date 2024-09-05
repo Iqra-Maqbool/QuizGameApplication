@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.Signup">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/design"
+        android:backgroundTint="#FF9273A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <EditText
+        android:id="@+id/signup_email_et"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_signup_design"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_username_et"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/signup_username_et"
+        app:layout_constraintTop_toBottomOf="@+id/signup_username_et" />
+
+    <EditText
+        android:id="@+id/signup_username_et"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/login_signup_design"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="329dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9273A1"
+        android:text="Register"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cpass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cpass"
+        app:layout_constraintTop_toBottomOf="@+id/cpass" />
+
+    <TextView
+        android:id="@+id/loginhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="Already have an account?  Login here"
+        android:textColor="#7B1FA2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <EditText
+        android:id="@+id/signup_password_et"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_signup_design"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_email_et"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/signup_email_et"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email_et" />
+
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_signup_design"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_password_et"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/signup_password_et"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

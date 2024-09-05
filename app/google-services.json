@@ -1,0 +1,51 @@
+{
+
+  
+    "rules": {
+      "users": {
+        "$uid": {
+          ".read": "auth != null && auth.uid == $uid",
+          ".write": "auth != null && auth.uid == $uid"
+        }
+      }
+    },
+  
+  "project_info": {
+    "project_number": "968291824070",
+    "firebase_url": "https://myexpensetracker-bbfda-default-rtdb.firebaseio.com",
+    "project_id": "myexpensetracker-bbfda",
+    "storage_bucket": "myexpensetracker-bbfda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968291824070:android:9e47f60eb5c5ec8be642c7",
+        "android_client_info": {
+          "package_name": "com.example.myexpensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968291824070-08s8l7dh30ekepm7rvh5tng579fog78f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg0c2NT4-uxSLP1NRUstTVUSQ9H3fZ6iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968291824070-08s8l7dh30ekepm7rvh5tng579fog78f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
