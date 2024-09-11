@@ -1,4 +1,4 @@
-package com.example.myexpensetracker.authentication
+package com.example.myexpensetracker
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.myexpensetracker.R
 import com.example.myexpensetracker.databinding.ActivitySignupBinding
 import com.example.myexpensetracker.models.UserModelClass
 import com.google.firebase.auth.FirebaseAuth

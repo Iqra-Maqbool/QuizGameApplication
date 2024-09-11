@@ -16,14 +16,14 @@
             android:name=".viewmodels.QuizViewModel"
             android:exported="false" />
         <activity
-            android:name=".quiz.QuizActivity"
+            android:name=".QuizActivity"
             android:exported="false"
             android:theme="@style/Theme.QuizGame" />
         <activity
-            android:name=".authentication.Signup"
+            android:name=".Signup"
             android:exported="false" />
         <activity
-            android:name=".authentication.Login"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

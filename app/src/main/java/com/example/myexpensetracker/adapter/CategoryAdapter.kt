@@ -1,5 +1,5 @@
-package com.example.myexpensetracker.fragments.home
-import com.example.myexpensetracker.quiz.QuizActivity
+package com.example.myexpensetracker.adapter
+import com.example.myexpensetracker.QuizActivity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -20,7 +20,6 @@ class CategoryAdapter(
     }
 
     override fun getItemCount() = categoryList.size
-
     override fun onBindViewHolder(holder: MyCategoryViewHolder, position: Int) {
         val data = categoryList[position]
 
